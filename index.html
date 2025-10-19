@@ -31,10 +31,83 @@
             text-align: center;
         }
         
-        .logo {
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
             margin-bottom: 50px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 8px;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .dot {
+            background: #ffffff;
+            border-radius: 50%;
+        }
+        
+        /* Center dot large */
+        .dot:nth-child(13) {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Inner ring medium */
+        .dot:nth-child(7),
+        .dot:nth-child(8),
+        .dot:nth-child(9),
+        .dot:nth-child(12),
+        .dot:nth-child(14),
+        .dot:nth-child(17),
+        .dot:nth-child(18),
+        .dot:nth-child(19) {
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+        
+        /* Outer ring small */
+        .dot:nth-child(2),
+        .dot:nth-child(4),
+        .dot:nth-child(6),
+        .dot:nth-child(10),
+        .dot:nth-child(16),
+        .dot:nth-child(20),
+        .dot:nth-child(22),
+        .dot:nth-child(24) {
+            width: 50%;
+            height: 50%;
+            margin: auto;
+        }
+        
+        /* Corner dots tiny */
+        .dot:nth-child(1),
+        .dot:nth-child(5),
+        .dot:nth-child(21),
+        .dot:nth-child(25) {
+            width: 30%;
+            height: 30%;
+            margin: auto;
+        }
+        
+        /* Empty spaces */
+        .dot:nth-child(3),
+        .dot:nth-child(11),
+        .dot:nth-child(15),
+        .dot:nth-child(23) {
+            background: transparent;
+        }
+        
+        .logo {
             font-size: 3.5em;
             letter-spacing: 0.02em;
+            white-space: nowrap;
         }
         
         .logo-decision {
@@ -129,6 +202,16 @@
         }
         
         @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .grid {
+                width: 60px;
+                height: 60px;
+            }
+            
             .logo {
                 font-size: 2em;
             }
@@ -159,8 +242,37 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <span class="logo-decision">Decision</span><span class="logo-dna">DNA</span><span class="logo-tm">®</span>
+        <div class="logo-container">
+            <div class="grid">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="logo">
+                <span class="logo-decision">Decision</span><span class="logo-dna">DNA</span><span class="logo-tm">®</span>
+            </div>
         </div>
         
         <p class="tagline">Building the Decision Economy</p>
