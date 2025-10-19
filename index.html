@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DecisionDNA™ - Building the Decision Economy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,8 +14,8 @@
         
         body {
             font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #ffffff;
-            color: #1a1a1a;
+            background: #000000;
+            color: #ffffff;
             line-height: 1.6;
         }
         
@@ -32,41 +32,52 @@
         }
         
         .logo {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+            font-size: 3.5em;
+            letter-spacing: 0.02em;
         }
         
-        h1 {
-            font-size: 3.5em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
+        .logo-decision {
+            font-weight: 400;
+        }
+        
+        .logo-dna {
+            font-weight: 100;
+        }
+        
+        .logo-tm {
+            font-weight: 100;
+            font-size: 0.5em;
+            vertical-align: super;
         }
         
         .tagline {
-            font-size: 1.5em;
-            font-weight: 400;
+            font-size: 1.4em;
+            font-weight: 300;
             margin-bottom: 50px;
-            color: #333;
+            color: #cccccc;
         }
         
         .description {
-            font-size: 1.15em;
+            font-size: 1.1em;
             max-width: 650px;
             margin: 0 auto 30px;
-            color: #444;
+            color: #aaaaaa;
             line-height: 1.8;
+            font-weight: 300;
         }
         
         .invitation {
             font-size: 1em;
             max-width: 600px;
             margin: 0 auto 50px;
-            padding: 25px;
-            background: #f8f8f8;
-            border-left: 4px solid #1a1a1a;
-            color: #555;
+            padding: 25px 30px;
+            background: #1a1a1a;
+            border-left: 3px solid #ffffff;
+            color: #cccccc;
             line-height: 1.7;
             text-align: left;
+            font-weight: 300;
         }
         
         .buttons {
@@ -79,53 +90,55 @@
         
         .button {
             display: inline-block;
-            padding: 18px 40px;
-            font-size: 1.05em;
-            font-weight: 600;
+            padding: 16px 38px;
+            font-size: 1em;
+            font-weight: 400;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 4px;
             transition: all 0.3s ease;
+            letter-spacing: 0.02em;
         }
         
         .button-primary {
-            background: #1a1a1a;
-            color: #ffffff;
+            background: #ffffff;
+            color: #000000;
         }
         
         .button-primary:hover {
-            background: #333;
+            background: #e0e0e0;
             transform: translateY(-2px);
         }
         
         .button-secondary {
             background: transparent;
-            color: #1a1a1a;
-            border: 2px solid #1a1a1a;
+            color: #ffffff;
+            border: 1px solid #ffffff;
         }
         
         .button-secondary:hover {
-            background: #1a1a1a;
-            color: #ffffff;
+            background: #ffffff;
+            color: #000000;
             transform: translateY(-2px);
         }
         
         .footer {
             margin-top: 80px;
-            font-size: 0.95em;
-            color: #888;
+            font-size: 0.9em;
+            color: #666666;
+            font-weight: 300;
         }
         
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2em;
+            .logo {
+                font-size: 2em;
             }
             
             .tagline {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
             
             .description {
-                font-size: 1.05em;
+                font-size: 1em;
             }
             
             .invitation {
@@ -147,7 +160,7 @@
 <body>
     <div class="container">
         <div class="logo">
-            <h1>DecisionDNA™</h1>
+            <span class="logo-decision">Decision</span><span class="logo-dna">DNA</span><span class="logo-tm">®</span>
         </div>
         
         <p class="tagline">Building the Decision Economy</p>
