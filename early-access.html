@@ -11,14 +11,32 @@
       color: #fff; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       padding: 40px 20px;
+      position: relative;
+    }
+    .grid-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      width: 60px;
+      height: auto;
+      opacity: 0.8;
     }
     .container { 
       max-width: 600px; 
       margin: 0 auto; 
     }
+    @media (max-width: 768px) {
+      .grid-icon {
+        width: 40px;
+        top: 20px;
+        right: 20px;
+      }
+    }
   </style>
 </head>
 <body>
+  <img src="https://decisiondna.io/decision_grid_highres_300dpi.png" alt="DecisionDNA" class="grid-icon">
+  
   <div class="container">
     <script src="https://js-na2.hsforms.net/forms/embed/244418801.js" defer></script>
     <div class="hs-form-frame" data-region="na2" data-form-id="4b499e66-bbfa-427d-920d-ae297b284151" data-portal-id="244418801"></div>
