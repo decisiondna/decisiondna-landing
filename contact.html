@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> - Product inquiries, research collaboration, and media contact.">
+  <title>Contact - <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span></title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <nav class="nav">
+    <div class="nav-content">
+      
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.svg" alt="DecisionDNA Logo" class="nav-logo-icon">
+        <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      
+                  <ul class="nav-links">
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="how-we-work.html">How We Work</a></li>
+        <li><a href="theory/index.html">Theory</a></li>
+        <li><a href="research/index.html">Research</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" style="min-height: 25vh; padding-bottom: 0;">
+    <div class="hero-bg">
+      <div class="metabolic-grid"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-label">Get in Touch</div>
+        <h1>Contact <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span></h1>
+        <p class="hero-subtitle">
+          Product inquiries, research collaboration, or media contact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 1rem 0 6rem 0;">
+    <div class="container-narrow">
+      
+      <!-- 
+        TO USE HUBSPOT FORM:
+        1. Create a contact form in HubSpot
+        2. Replace the form below with:
+        
+        <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na2",
+            portalId: "244418801",
+            formId: "YOUR_CONTACT_FORM_ID_HERE"
+          });
+        </script>
+      -->
+      
+      <form class="contact-form" onsubmit="return handleFormSubmit(event);" action="thank-you.html" method="get">
+        
+        <div class="form-group">
+          <label class="form-label" for="name">Name *</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="email">Email *</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="organization">Organization</label>
+          <input type="text" id="organization" name="organization" class="form-input">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="category">Inquiry Type *</label>
+          <select id="category" name="category" class="form-select" required>
+            <option value="">Select a category</option>
+            <option value="product">Product Inquiry</option>
+            <option value="dd">Metabolic Due Diligence</option>
+            <option value="abri">Bubble Index: AI Interest</option>
+            <option value="research">Research Collaboration</option>
+            <option value="media">Media & Press</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="message">Message *</label>
+          <textarea id="message" name="message" class="form-textarea" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        
+      </form>
+    </div>
+  </section>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <p>&copy; 2025 DecisionDNA. All rights reserved.</p>
+        <div style="display: flex; gap: 2rem;">
+          <a href="contact.html" style="color: var(--color-light-gray);">Contact</a>
+          <a href="privacy.html" style="color: var(--color-light-gray);">Privacy</a>
+          <a href="terms.html" style="color: var(--color-light-gray);">Terms</a>
+          <a href="how-we-work.html" style="color: var(--color-light-gray);">How We Work</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

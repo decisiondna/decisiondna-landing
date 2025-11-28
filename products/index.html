@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DecisionDNA products quantify how effectively a system converts signals into outcomes. Metabolic measurement for high-stakes decision systems.">
+  <title>Products - DecisionDNA</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <link rel="stylesheet" href="../css/main.css">
+  
+  <style>
+    .products-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    
+    @media (max-width: 1024px) {
+      .products-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .products-grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .product-card-full {
+      background: var(--color-charcoal);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 2.5rem;
+      transition: border-color 0.3s ease;
+    }
+    
+    .product-card-full:hover {
+      border-color: var(--color-accent);
+    }
+    
+    .product-card-full h3 {
+      font-family: 'Alata', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .product-card-full .product-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-accent);
+      margin-bottom: 0.5rem;
+    }
+    
+    .bubble-card {
+      background: linear-gradient(135deg, var(--color-charcoal) 0%, rgba(0, 245, 212, 0.05) 100%);
+      border: 1px solid var(--color-accent);
+    }
+    
+    .coming-soon-card {
+      opacity: 0.6;
+      border-style: dashed;
+    }
+    
+    .coming-soon-card:hover {
+      opacity: 0.9;
+    }
+    
+    .module-number {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-gray);
+      margin-bottom: 0.25rem;
+    }
+    
+    .product-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: var(--color-accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s ease;
+    }
+    
+    .product-link:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo.svg" alt="DecisionDNA Logo" class="nav-logo-icon">
+        DecisionDNA<sup style="font-size: 0.5em; vertical-align: super;">®</sup>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      
+      <ul class="nav-links">
+        <li><a href="../products/index.html">Products</a></li>
+        <li><a href="../how-we-work.html">How We Work</a></li>
+        <li><a href="../theory/index.html">Theory</a></li>
+        <li><a href="../research/index.html">Research</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" style="min-height: 40vh; padding-bottom: 0;">
+    <div class="hero-bg">
+      <div class="metabolic-grid"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-label">Product Suite</div>
+        <h1>Metabolic Intelligence Products</h1>
+        <p class="hero-subtitle" style="max-width: 700px; margin: 1rem auto 0;">
+          DecisionDNA quantifies how effectively a system converts signals into outcomes. It predicts the likelihood of performance under pressure, how likely strategy becomes reality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 4rem 0;">
+    <div class="container">
+      <p style="text-align: center; font-size: 1.25rem; margin-bottom: 1rem;">
+        Our tools exist for one purpose:
+      </p>
+      <p style="text-align: center; font-size: 1.5rem; font-weight: 500; margin-bottom: 4rem;">
+        To reveal to our clients where execution breaks down, now and in the future.
+      </p>
+      
+      <!-- AI Bubble Index - Horizontal Featured Card -->
+      <div class="product-card-full bubble-card" style="margin-bottom: 4rem;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
+          <div style="flex: 1; min-width: 300px;">
+            <div class="product-label">Free Monthly Intelligence</div>
+            <h3>AI Bubble Index</h3>
+            <p style="margin-bottom: 1rem;">
+              Forensic measurement of structural risk in the AI sector. Monthly report with Index Score, Correction Probability, Credit Stress Indicators, and Refinancing Cliff Timeline.
+            </p>
+            <p style="color: var(--color-gray); font-size: 0.95rem;">
+              See metabolic measurement in action. Free. Registration required.
+            </p>
+          </div>
+          <div>
+            <a href="abri.html" class="btn btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- The Three Modules -->
+      <h2 style="text-align: center; margin-bottom: 0.5rem;">The Metabolic Engine</h2>
+      <p style="text-align: center; color: var(--color-gray); margin-bottom: 3rem;">One measurement architecture. Three modules. Different application domains.</p>
+      
+      <div class="products-grid-3">
+        
+        <!-- Module I: Metabolic Profiling -->
+        <div class="product-card-full">
+          <div class="module-number">Module I</div>
+          <div class="product-label">Forensic Structural Assessment</div>
+          <h3>Metabolic Profiling</h3>
+          <p style="margin-bottom: 1.5rem;">
+            Why is strategy not becoming performance? A complete metabolic profile of how an organization converts information into outcomes.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-gray); margin-bottom: 1rem;">
+            Conversion strength across six pulse dimensions. Failure-window estimation. Archetype classification. Intervention leverage points.
+          </p>
+          <p style="font-size: 0.95rem; font-style: italic;">
+            Financial results lag reality by quarters. Metabolism shows future outcomes before they exist.
+          </p>
+          <a href="metabolic-profiling.html" class="product-link">Learn More →</a>
+        </div>
+        
+        <!-- Module II: Metabolic Due Diligence -->
+        <div class="product-card-full">
+          <div class="module-number">Module II</div>
+          <div class="product-label">Outcome Realisation Probability</div>
+          <h3>Metabolic Due Diligence</h3>
+          <p style="margin-bottom: 1.5rem;">
+            Can this business deliver the IRR you're modeling? This assessment reveals whether the target can translate strategy into outcomes under load.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-gray); margin-bottom: 1rem;">
+            Execution capacity vs plan demands. Integration stress forecast. Probability of plan realisation within timeline.
+          </p>
+          <p style="font-size: 0.95rem; font-style: italic;">
+            You buy a business for the outcomes its decisions produce. We determine whether those outcomes are structurally achievable.
+          </p>
+          <a href="due-diligence.html" class="product-link">Learn More →</a>
+        </div>
+        
+        <!-- Module III: Pre-Transformation Scan -->
+        <div class="product-card-full">
+          <div class="module-number">Module III</div>
+          <div class="product-label">Forward Execution Viability</div>
+          <h3>Pre-Transformation Scan</h3>
+          <p style="margin-bottom: 1.5rem;">
+            Can this system digest AI scaling, digital transformation, or integration load? Measures execution viability under acceleration before you commit.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-gray); margin-bottom: 1rem;">
+            Load tolerance assessment. Acceleration breakpoints. Metabolic capacity vs transformation demands.
+          </p>
+          <p style="font-size: 0.95rem; font-style: italic;">
+            Most transformations fail because the organism outruns its ability to convert signal into coordinated action.
+          </p>
+          <a href="pre-transformation.html" class="product-link">Learn More →</a>
+        </div>
+        
+      </div>
+      
+      <!-- Shadow Index - Coming 2026 -->
+      <h2 style="text-align: center; margin: 4rem 0 2rem 0;">Coming 2026</h2>
+      
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div class="product-card-full coming-soon-card">
+          <div class="product-label">Sector-Scale Metabolic Ranking</div>
+          <h3>Shadow Index</h3>
+          <p style="margin-bottom: 1rem;">
+            Expanding the Bubble Index methodology to the S&P 500. Public ranking of organizational metabolic health across sectors.
+          </p>
+          <p style="font-size: 0.95rem; font-style: italic; color: var(--color-gray);">
+            Markets price history. We price future execution capacity.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Why These Products Exist -->
+  <section style="background: var(--color-charcoal); padding: 4rem 0;">
+    <div class="container-narrow">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Why These Products Exist</h2>
+      
+      <div style="max-width: 700px; margin: 0 auto; text-align: left;">
+        <p style="font-size: 1.125rem; margin-bottom: 1rem;">
+          Because markets reward outcome conversion, not decision intent.
+        </p>
+        
+        <p style="font-size: 1.125rem; margin-bottom: 1rem;">
+          Because collapse is detectable long before numbers show it.
+        </p>
+        
+        <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+          Because execution is physics, not psychology.
+        </p>
+        
+        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+          The question is not what a system plans to do.
+        </p>
+        
+        <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+          The question is whether it can translate signal into impact fast enough to matter.
+        </p>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.5rem; font-weight: 500;">
+        That is what DecisionDNA measures and predicts.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <p>&copy; 2025 DecisionDNA. All rights reserved.</p>
+        <div style="display: flex; gap: 2rem;">
+          <a href="../contact.html" style="color: var(--color-light-gray);">Contact</a>
+          <a href="../privacy.html" style="color: var(--color-light-gray);">Privacy</a>
+          <a href="../terms.html" style="color: var(--color-light-gray);">Terms</a>
+          <a href="../how-we-work.html" style="color: var(--color-light-gray);">How We Work</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

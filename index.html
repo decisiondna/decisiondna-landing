@@ -1,384 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>DecisionDNA® - Building the Decision Economy</title>
-    <meta name="description" content="Performance = Metabolic Rate × Decision Accuracy². A universal pattern from biological systems to boardrooms. Proven through econometric modeling.">
-    <meta name="keywords" content="decision architecture, decision metabolism, organizational performance, decision economy, strategic execution">
-    <meta name="author" content="Boy W.J. Kester">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://decisiondna.io/">
-    <meta property="og:title" content="DecisionDNA® - Building the Decision Economy">
-    <meta property="og:description" content="Performance = Metabolic Rate × Decision Accuracy². A universal pattern from biological systems to boardrooms.">
-    <meta property="og:image" content="https://decisiondna.io/decision_grid_highres_300dpi.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://decisiondna.io/">
-    <meta name="twitter:title" content="DecisionDNA® - Building the Decision Economy">
-    <meta name="twitter:description" content="Performance = Metabolic Rate × Decision Accuracy². A universal pattern from biological systems to boardrooms.">
-    <meta name="twitter:image" content="https://decisiondna.io/decision_grid_highres_300dpi.png">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon_1.png">
-    <link rel="apple-touch-icon" href="favicon_1.png">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSW1FKT11P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-VSW1FKT11P');
-    </script>
-    
-    <!-- LinkedIn Insight Tag -->
-    <script type="text/javascript">
-        _linkedin_partner_id = "8163236";
-        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    </script>
-    <script type="text/javascript">
-        (function(l) {
-            if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-            window.lintrk.q=[]}
-            var s = document.getElementsByTagName("script")[0];
-            var b = document.createElement("script");
-            b.type = "text/javascript";b.async = true;
-            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-            s.parentNode.insertBefore(b, s);
-        })(window.lintrk);
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=8163236&fmt=gif" />
-    </noscript>
-    
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-        background: #000000;
-        color: #ffffff;
-        line-height: 1.6;
-    }
-    
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 60px 30px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .logo-container {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        margin-bottom: 50px;
-    }
-    
-    .grid-icon {
-        width: 70px;
-        height: auto;
-    }
-    
-    .logo {
-        font-size: 3.5em;
-        letter-spacing: 0.02em;
-        white-space: nowrap;
-    }
-    
-    .logo-decision {
-        font-weight: 400;
-    }
-    
-    .logo-dna {
-        font-weight: 100;
-    }
-    
-    .logo-tm {
-        font-weight: 100;
-        font-size: 0.5em;
-        vertical-align: super;
-    }
-    
-    .tagline {
-        font-size: 1.4em;
-        font-weight: 300;
-        margin-bottom: 50px;
-        color: #cccccc;
-    }
-    
-    .description {
-        font-size: 1.1em;
-        max-width: 650px;
-        margin: 0 auto 30px;
-        color: #aaaaaa;
-        line-height: 1.8;
-        font-weight: 400;
-    }
-    
-    .equation {
-        text-align: center;
-        font-size: 1.3em;
-        font-weight: 600;
-        margin: 2em 0;
-        letter-spacing: 0.02em;
-        color: #ffffff;
-    }
-    
-    .closing {
-        font-size: 1.1em;
-        font-weight: 400;
-        margin-top: 1em;
-        margin-bottom: 3em;
-        color: #ffffff;
-    }
-    
-    .alpha-circle-cta {
-        max-width: 600px;
-        margin: 0 auto 60px;
-        padding: 35px 40px;
-        background: #1a1a1a;
-        border: 1px solid #333333;
-        text-align: center;
-    }
-    
-    .alpha-circle-cta h2 {
-        font-size: 1.4em;
-        font-weight: 600;
-        margin-bottom: 0.5em;
-        color: #ffffff;
-    }
-    
-    .alpha-circle-cta p {
-        font-size: 1em;
-        color: #cccccc;
-        margin-bottom: 1.5em;
-        font-weight: 400;
-    }
-    
-    .button-alpha {
-        display: inline-block;
-        padding: 16px 38px;
-        font-size: 1em;
-        font-weight: 400;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.02em;
-        background: #ffffff;
-        color: #000000;
-    }
-    
-    .button-alpha:hover {
-        background: #e0e0e0;
-        transform: translateY(-2px);
-    }
-    
-    .invitation {
-        font-size: 1em;
-        max-width: 600px;
-        margin: 0 auto 50px;
-        padding: 25px 30px;
-        background: #1a1a1a;
-        border-left: none;
-        color: #cccccc;
-        line-height: 1.7;
-        text-align: left;
-        font-weight: 400;
-    }
-    
-    .invitation-title {
-        font-weight: 600;
-        margin-bottom: 1em;
-        color: #ffffff;
-    }
-    
-    .invitation p {
-        margin-bottom: 0.8em;
-    }
-    
-    .invitation p:last-of-type {
-        margin-top: 1.5em;
-        font-style: italic;
-    }
-    
-    .buttons {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 40px;
-    }
-    
-    .button {
-        display: inline-block;
-        padding: 16px 38px;
-        font-size: 1em;
-        font-weight: 400;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.02em;
-    }
-    
-    .button-primary {
-        background: #ffffff;
-        color: #000000;
-    }
-    
-    .button-primary:hover {
-        background: #e0e0e0;
-        transform: translateY(-2px);
-    }
-    
-    .button-secondary {
-        background: transparent;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-    }
-    
-    .button-secondary:hover {
-        background: #ffffff;
-        color: #000000;
-        transform: translateY(-2px);
-    }
-    
-    .footer {
-        margin-top: 80px;
-        font-size: 0.9em;
-        color: #666666;
-        font-weight: 300;
-    }
-    
-    .copyright {
-        margin-top: 10px;
-        font-size: 0.85em;
-        color: #666666;
-        font-weight: 300;
-    }
-    
-    @media (max-width: 768px) {
-        .logo-container {
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .grid-icon {
-            width: 50px;
-        }
-        
-        .logo {
-            font-size: 2em;
-        }
-        
-        .tagline {
-            font-size: 1.1em;
-        }
-        
-        .description {
-            font-size: 1em;
-        }
-        
-        .equation {
-            font-size: 1.1em;
-        }
-        
-        .alpha-circle-cta {
-            padding: 25px 20px;
-        }
-        
-        .alpha-circle-cta h2 {
-            font-size: 1.2em;
-        }
-        
-        .button-alpha {
-            width: 100%;
-        }
-        
-        .invitation {
-            padding: 20px;
-            text-align: left;
-        }
-        
-        .buttons {
-            flex-direction: column;
-            width: 100%;
-        }
-        
-        .button {
-            width: 100%;
-        }
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DecisionDNA measures coordination limits before collapse. We predict performance. We see decay years before markets do.">
+  <title>DecisionDNA - Metabolic Intelligence for High Stakes Systems</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="decision_grid_highres_300dpi.png" alt="DecisionDNA Grid" class="grid-icon">
-            <div class="logo">
-                <span class="logo-decision">Decision</span><span class="logo-dna">DNA</span><span class="logo-tm">®</span>
-            </div>
-        </div>
-        
-        <p class="tagline">Building the Decision Economy</p>
-        
-        <div class="description">
-            <p>Performance emerges from metabolic rate aligned with decision accuracy—not from resources, strategy, or market position.</p>
-        </div>
-        
-        <div class="equation">
-            <i>Performance = Metabolic Rate × Decision Accuracy²</i>
-        </div>
-        
-        <div class="description">
-            <p>A universal pattern visible from biological systems to boardrooms. Proven through econometric modeling. Validated across industries, crises, and competitive environments.</p>
-        </div>
-        
-        <p class="closing">Now measurable. Now improvable.</p>
-        
-        <!-- NEW: Alpha Circle CTA -->
-        <div class="alpha-circle-cta">
-            <h2>AI Bubble Index Launching December 1st</h2>
-            <p>Monthly report for decision-makers.</p>
-            <a href="early-access.html" class="button-alpha"><b>Join </b>the Alpha-Circle</a>
-        </div>
-        
-        <div class="invitation">
-            <p class="invitation-title">Who This Is For</p>
-            
-            <p>CEOs navigating shocks and strategic pivots where coordination speed sets the competitive boundary.</p>
-            
-            <p>Private equity investors focused on PortCo operating metabolism as the decisive driver of value creation.</p>
-            
-            <p>Boards evaluating major CAPEX and talent commitments where execution capacity is the primary constraint.</p>
-        </div>
-        
-        <div class="buttons">
-            <a href="https://linkedin.com/in/boykester" class="button button-primary">Connect on LinkedIn</a>
-            <a href="mailto:boy@decisiondna.io" class="button button-secondary">Enquire</a>
-        </div>
-        
-        <p class="footer">Founded by Boy W.J. Kester</p>
-        <p class="copyright">© 2025 DecisionDNA®. All rights reserved.</p>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.svg" alt="DecisionDNA Logo" class="nav-logo-icon">
+        DecisionDNA<sup style="font-size: 0.5em; vertical-align: super;">®</sup>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      
+      <ul class="nav-links">
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="how-we-work.html">How We Work</a></li>
+        <li><a href="theory/index.html">Theory</a></li>
+        <li><a href="research/index.html">Research</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 90vh;">
+    <div class="container">
+      <div class="hero-content" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 style="margin-bottom: 1.5rem; line-height: 1.2; max-width: 900px;">
+          Welcome to the operating system of strategy and performance.
+        </h1>
+        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 1.5rem auto; color: var(--color-light-gray);">
+          We measure coordination limits before collapse. We predict performance. We see decay years before markets do.
+        </p>
+        <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto 3rem auto; font-size: 1.125rem;">
+          Financial statements describe history. Decision metabolism predicts the future.
+        </p>
+        
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;">
+          <a href="products/abri.html" class="btn btn-primary">Learn More</a>
+          <a href="products/abri.html#register" class="btn btn-secondary">Register for the AI Bubble Index</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Are Buying -->
+  <section style="padding: 6rem 0;">
+    <div class="container-narrow">
+      <div class="section-header">
+        <div class="section-label">What You Are Buying</div>
+        <h2>The measurement instrument for systems under strain</h2>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-bottom: 3rem;">
+        Markets do not fail when revenue falters. They fail when metabolic load exceeds coordination capacity.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-bottom: 2rem;">
+        Our method tracks:
+      </p>
+      
+      <div class="dimensions-grid" style="margin-bottom: 3rem;">
+        <div class="dimension-card">
+          <h4>Decision Density</h4>
+          <p>Volume of consequential decisions relative to digestive capacity.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Decision Velocity</h4>
+          <p>Speed from recognition to committed action.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Decision Vitality</h4>
+          <p>Capacity for renewal, learning, and metabolic regeneration.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Marginal Decision Cost</h4>
+          <p>Resource cost of producing one additional decision pulse.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Selection Fidelity</h4>
+          <p>Accuracy of choosing the correct problems to solve.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Execution Fidelity</h4>
+          <p>Accuracy of implementing chosen actions.</p>
+        </div>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.25rem;">
+        Together these reveal structural fatigue that price cannot see.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-top: 1.5rem; font-weight: 500;">
+        This is not sentiment. This is metabolic physics applied to strategy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why It Matters Now -->
+  <section style="background: var(--color-charcoal); padding: 6rem 0;">
+    <div class="container-narrow">
+      <div class="section-header">
+        <div class="section-label">Why It Matters Now</div>
+        <h2>The AI valuation regime is metabolically unstable</h2>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-bottom: 2rem;">
+        Capital, talent, narrative, and compute are overcoupled. Velocity exceeds accuracy. Coordination is fracturing.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-bottom: 2rem;">
+        Traditional analysis cannot see the rupture interval. DecisionDNA can.
+      </p>
+      
+      <div class="formula" style="margin: 3rem 0;">
+        The Bubble will not ruin AI.<br>
+        The landing will standardize it.<br>
+        Those who detect stress early will own the aftermath.
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="products/abri.html" class="btn btn-primary">Register for the Report</a>
+        <p style="margin-top: 1rem; color: var(--color-gray);">Become one of them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof of Work -->
+  <section style="padding: 6rem 0;">
+    <div class="container-narrow">
+      <div class="section-header">
+        <div class="section-label">Proof of Work</div>
+        <h2>Tell the world what you measure. Show them what you have already seen.</h2>
+      </div>
+      
+      <h3 style="text-align: center; margin-bottom: 2rem;">Empirical Foundation</h3>
+      
+      <div class="dimensions-grid" style="margin-bottom: 3rem;">
+        <div class="dimension-card">
+          <h4>160+</h4>
+          <p>Club seasons in elite professional sports analyzed for coordination patterns</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>200+</h4>
+          <p>Organizational metabolic analyses explaining shock response divergence</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>24 to 60 months</h4>
+          <p>Metabolic decay visible before financial distress materializes</p>
+        </div>
+      </div>
+      
+      <div class="formula" style="margin: 3rem 0;">
+        Performance = Metabolic Rate × Accuracy²
+      </div>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-top: 2rem;">
+        When metabolism collapses, performance must follow.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-top: 1rem; color: var(--color-gray);">
+        This is not theory. This is measurement.
+      </p>
+    </div>
+  </section>
+
+  <!-- What You Can Do With It -->
+  <section style="background: var(--color-charcoal); padding: 6rem 0;">
+    <div class="container-narrow">
+      <div class="section-header">
+        <div class="section-label">What You Can Do With It</div>
+        <h2>From measurement to action</h2>
+      </div>
+      
+      <div class="dimensions-grid" style="margin-bottom: 3rem;">
+        <div class="dimension-card">
+          <h4>Metabolic Profiling</h4>
+          <p>Know why strategy is not becoming performance. Get the structural baseline before making decisions.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Pre-Deal Due Diligence</h4>
+          <p>Measure whether a target can deliver the IRR before capital commits. See execution viability, not just financials.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Pre-Transformation Scan</h4>
+          <p>Know if your system can digest AI, digital transformation, or integration load before you launch.</p>
+        </div>
+      </div>
+      
+      <div class="dimensions-grid" style="margin-top: 3rem;">
+        <div class="dimension-card">
+          <h4>Funds</h4>
+          <p>Detect circular revenue exposure and narrative distortion before the market reprices.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>PE Firms</h4>
+          <p>Predict value destruction risk and metabolic incompatibility before capital commitment.</p>
+        </div>
+        
+        <div class="dimension-card">
+          <h4>Operators</h4>
+          <p>Prevent execution decay by understanding coordination limits before they bind.</p>
+        </div>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-top: 3rem;">
+        Whoever sees decay first sets price later.
+      </p>
+    </div>
+  </section>
+
+  <!-- The Report -->
+  <section style="padding: 6rem 0;">
+    <div class="container-narrow">
+      <div class="section-header">
+        <div class="section-label">The Report</div>
+        <h2>AI Bubble Index: Metabolic Measurement on the Most Leveraged System in History</h2>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-bottom: 3rem;">
+        Not a take. A measurement.
+      </p>
+      
+      <div style="max-width: 600px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.2); padding: 2rem;">
+        <p style="font-size: 1.125rem; margin-bottom: 1.5rem;"><strong>Contains:</strong></p>
+        <p style="font-size: 1rem; margin: 0.75rem 0;">Index Score and Correction Probability</p>
+        <p style="font-size: 1rem; margin: 0.75rem 0;">Chain of Survival Model (Four Filter Analysis)</p>
+        <p style="font-size: 1rem; margin: 0.75rem 0;">Refinancing Cliff Timeline</p>
+        <p style="font-size: 1rem; margin: 0.75rem 0;">Credit Stress and Liquidity Depth Tracking</p>
+        <p style="font-size: 1rem; margin: 0.75rem 0;">Metabolic Drag Coefficients</p>
+        <p style="font-size: 1rem; margin: 0.75rem 0;">Strategic Implications and Resilience Winners</p>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-top: 2rem; color: var(--color-gray);">
+        This report is not for everyone. It is for those who want to see before others understand.
+      </p>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="products/abri.html" class="btn btn-primary">Register for the AI Bubble Report</a>
+        <p style="margin-top: 1.5rem;">
+          <a href="contact.html" style="color: var(--color-accent);">Request Institutional Briefing</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scientific Foundation -->
+  <section style="background: var(--color-charcoal); padding: 6rem 0;">
+    <div class="container-narrow">
+      <div class="section-header">
+        <div class="section-label">Scientific Foundation</div>
+        <h2>Built on research, not intuition</h2>
+      </div>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-bottom: 2rem;">
+        DecisionDNA is built on an active research program investigating metabolic coordination principles across biological, organizational, and strategic systems.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-bottom: 2rem;">
+        The future of performance measurement is metabolic. The future of forecasting is coordination physics.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.25rem; margin-top: 3rem;">
+        The future belongs to those who see lag before loss.
+      </p>
+      
+      <p style="text-align: center; font-size: 1.125rem; margin-top: 2rem; color: var(--color-gray);">
+        Welcome to the next operating system of strategy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <p>&copy; 2025 DecisionDNA. All rights reserved.</p>
+        <div style="display: flex; gap: 2rem;">
+          <a href="contact.html" style="color: var(--color-light-gray);">Contact</a>
+          <a href="privacy.html" style="color: var(--color-light-gray);">Privacy</a>
+          <a href="terms.html" style="color: var(--color-light-gray);">Terms</a>
+          <a href="how-we-work.html" style="color: var(--color-light-gray);">How We Work</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  
 </body>
 </html>
