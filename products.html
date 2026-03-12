@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DecisionDNA products: self-serve diagnostic plugin, consultant-led enterprise diagnostic, portfolio monitoring, and API access.">
+  <meta property="og:title" content="Products — DecisionDNA">
+  <meta property="og:description" content="DecisionDNA products: self-serve diagnostic plugin, consultant-led enterprise diagnostic, portfolio monitoring, and API access.">
+  <meta property="og:url" content="https://decisiondna.io/products.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecisionDNA">
+  <meta property="og:image" content="https://decisiondna.io/images/Header.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Products — DecisionDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      max-width: 1000px;
+      margin: 0 auto;
+      /* Shared row tracks: header | body | specs | CTA */
+      grid-template-rows: subgrid;
+    }
+    .product-card {
+      border: 1px solid var(--border-light);
+      padding: var(--space-2xl);
+      display: grid;
+      grid-template-rows: auto 1fr auto auto;
+      gap: 0;
+    }
+    .product-card--alt { background: var(--near-white); }
+    .product-card__header { margin-bottom: var(--space-sm); }
+    .product-card__body { }
+    .product-card__specs {
+      border-top: 1px solid var(--border-light);
+      margin-top: var(--space-lg);
+      padding-top: var(--space-lg);
+    }
+    .product-card .product-cta {
+      padding-top: var(--space-xl);
+      align-self: end;
+    }
+    @media (max-width: 768px) {
+      .product-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Signal Flow Diagram */
+    .signal-flow {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1.4fr;
+      gap: 0;
+      align-items: start;
+    }
+    .signal-flow__col {
+      display: flex;
+      flex-direction: column;
+    }
+    .signal-flow__arrow {
+      font-size: 2rem;
+      color: var(--mid-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 var(--space-md);
+      padding-top: 3.5rem;
+    }
+    .signal-flow__group {
+      margin-bottom: var(--space-lg);
+    }
+    .signal-flow__group:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 900px) {
+      .signal-flow {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+      }
+      .signal-flow__arrow {
+        transform: rotate(90deg);
+        padding: 0;
+        justify-content: center;
+      }
+    }
+  </style>
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.svg" alt="DecisionDNA" class="nav__logo-icon">
+        Decision<span>DNA</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="archetypes/index.html">Archetypes</a></li>
+        <li><a href="evidence.html">Evidence</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Products</h1>
+    <p class="page-header__subtitle">Two ways to understand your organization&rsquo;s metabolism. Same diagnostic engine, same 2,200+ case repository. You choose how it&rsquo;s delivered.</p>
+  </div>
+
+  <!-- Two Products Side by Side -->
+  <section class="section">
+    <div class="container">
+      <div class="product-grid">
+
+        <!-- Self-Serve -->
+        <div class="product-card">
+          <div class="product-card__header">
+            <p class="product-block__status product-block__status--live" style="margin-bottom: var(--space-sm);">&#9679; Available Now &mdash; Alpha</p>
+            <h3 style="margin-bottom: var(--space-sm);">Self-Serve Diagnostic</h3>
+            <p class="product-block__sub">Run it on your own business or department, using your own data</p>
+          </div>
+
+          <div class="product-card__body">
+            <p style="color: var(--mid); font-size: 0.9375rem;">Using Claude Desktop, point it at a folder containing board packs, strategy memos, and/or due diligence reports. The plugin extracts decision episodes locally, scores them against the repository, anonymises and benchmarks against our GDPR compliant engine, and returns a full diagnostic. Nothing traceable or privacy sensitive leaves your machine.&nbsp;<sup>1</sup></p>
+            <a href="how-it-works.html#methodology" class="btn btn--secondary-dark btn--small" style="margin-top: var(--space-md);">Learn More</a>
+          </div>
+
+          <div class="product-cta">
+            <a href="contact.html" class="btn btn--primary-dark">Join Alpha</a>
+          </div>
+        </div>
+
+        <!-- Consultant-Led -->
+        <div class="product-card product-card--alt">
+          <div class="product-card__header">
+            <p class="product-block__status product-block__status--live" style="margin-bottom: var(--space-sm);">&#9679; Available Now &mdash; Alpha</p>
+            <h3 style="margin-bottom: var(--space-sm);">Consultant-Led Diagnostic</h3>
+            <p class="product-block__sub">Board-ready, from existing artefacts</p>
+          </div>
+
+          <div class="product-card__body">
+            <p style="color: var(--mid); font-size: 0.9375rem;">This is a bespoke process where we co-design the analysis in breadth, depth and scope. This is particularly relevant in pre-deal environments or before embarking on a large-scale transformation initiative. After mobilisation we will be able to tell you within weeks if your initiative has potential or is DOA. You will receive:</p>
+            <div class="artefact-grid">
+              <div class="artefact-tile">
+                <p class="artefact-tile__title">Archetype<br>Classification</p>
+                <div class="artefact-tile__desc">Which of the 5 metabolic archetypes your organisation maps to, based on Metabolic Rate &times; Decision Accuracy. Includes six-dimension scoring, sector benchmarking, and risk profile.</div>
+              </div>
+              <div class="artefact-tile">
+                <p class="artefact-tile__title">Load<br>Absorption<br>Capacity</p>
+                <div class="artefact-tile__desc">How much strategic load your organisation can absorb before coordination breaks down. Retrospective analysis across crisis acquisitions, transformations, and scaling events.</div>
+              </div>
+              <div class="artefact-tile">
+                <p class="artefact-tile__title">Forward<br>Degradation<br>Signals</p>
+                <div class="artefact-tile__desc">Leading indicators that predict metabolic decline before it shows up in financial performance. Early warning system for governance erosion and coordination breakdown.</div>
+              </div>
+              <div class="artefact-tile">
+                <p class="artefact-tile__title">Intervention<br>Window<br>&amp; Timing</p>
+                <div class="artefact-tile__desc">When to act and what to prioritise. Maps intervention points across your holding period or transformation timeline with sequencing constraints.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-cta">
+            <a href="contact.html" class="btn btn--primary-dark">Request a Diagnostic</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="font-size: 0.75rem; color: var(--mid-light); margin-top: var(--space-xl); max-width: 1000px; margin-left: auto; margin-right: auto;"><sup>1</sup> The self-serve plugin runs on Claude Desktop. Before using it on confidential documents, confirm with your CISO or data privacy officer that your organisation&rsquo;s AI usage policies permit processing these materials through a large language model. DecisionDNA does not assume liability for data shared with the underlying model provider.</p>
+
+    </div>
+  </section>
+
+  <!-- Coming Soon strip -->
+  <section class="section section--dark">
+    <div class="container" style="text-align: center;">
+      <div class="section__header">
+        <p class="section__label">On the Roadmap</p>
+        <h2>Coming later in 2026</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); max-width: 800px; margin: 0 auto; text-align: left;">
+        <div>
+          <h4 style="color: var(--white);">Portfolio Monitoring</h4>
+          <p style="color: var(--silver); font-size: 0.9375rem; margin-bottom: var(--space-md);">Quarterly metabolic pulse across portfolio companies. Detect degradation before it reaches the P&amp;L.</p>
+          <a href="contact.html" class="link-arrow" style="color: var(--white); font-size: 0.875rem;">Express interest</a>
+        </div>
+        <div>
+          <h4 style="color: var(--white);">API Access</h4>
+          <p style="color: var(--silver); font-size: 0.9375rem; margin-bottom: var(--space-md);">Embed the scoring engine in your own advisory and diagnostic workflows.</p>
+          <a href="contact.html" class="link-arrow" style="color: var(--white); font-size: 0.875rem;">Express interest</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Security -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Privacy &amp; Security</p>
+        <h2>What happens to your data</h2>
+        <p>The diagnostic is designed around a single principle: your documents never leave your machine.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); max-width: 960px; margin: 0 auto;">
+
+        <!-- Left column: What stays local -->
+        <div>
+          <h4 style="margin-bottom: var(--space-lg);">What stays on your machine</h4>
+          <div class="data-point">
+            <h4>All document files</h4>
+            <p>PDF, DOCX, PPTX &mdash; every source file remains on your workstation. The plugin reads them locally.</p>
+          </div>
+          <div class="data-point">
+            <h4>Full text extraction</h4>
+            <p>Document content is parsed and processed entirely client-side. No text is transmitted.</p>
+          </div>
+          <div class="data-point">
+            <h4>Decision episode identification</h4>
+            <p>The plugin identifies and structures decision episodes from your documents locally.</p>
+          </div>
+        </div>
+
+        <!-- Right column: What is transmitted -->
+        <div>
+          <h4 style="margin-bottom: var(--space-lg);">What is transmitted for scoring</h4>
+          <div class="data-point">
+            <h4>Anonymized signal vectors</h4>
+            <p>Numerical feature vectors &mdash; the six dimension scores as numbers. No text, no context, no identifiable content.</p>
+          </div>
+          <div class="data-point">
+            <h4>Decision type counts</h4>
+            <p>Aggregate counts &mdash; how many decisions of each type and their status distributions. No narrative content.</p>
+          </div>
+          <div class="data-point">
+            <h4>Rhetorical metrics</h4>
+            <p>Statistical measures of language patterns. Not the language itself.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance details -->
+      <div style="max-width: 960px; margin: var(--space-3xl) auto 0; padding-top: var(--space-2xl); border-top: 1px solid var(--border-light);">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-xl);">
+          <div>
+            <h4 style="font-size: 0.875rem;">GDPR Compliance</h4>
+            <p style="color: var(--mid); font-size: 0.875rem; margin-bottom: 0;">No personal data transmitted. Anonymized payloads retained 90 days, then auto-purged. Immediate deletion available via diagnostic UUID (Article 17).</p>
+          </div>
+          <div>
+            <h4 style="font-size: 0.875rem;">EU Data Residency</h4>
+            <p style="color: var(--mid); font-size: 0.875rem; margin-bottom: 0;">Scoring infrastructure on GCP europe-west4 (Netherlands). Data does not leave EU jurisdiction.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 0.875rem;">Authentication</h4>
+            <p style="color: var(--mid); font-size: 0.875rem; margin-bottom: 0;">API gated through Cloudflare Access. Authenticated access, identity-blind payloads. No document reconstruction possible from transmitted data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <img src="images/logo.svg" alt="DecisionDNA">
+            <span>Decision<span style="font-weight: 300;">DNA</span></span>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="https://decisiondna.substack.com" target="_blank" rel="noopener">Substack</a>
+          <a href="https://www.linkedin.com/in/boykester/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 DecisionDNA Pte Ltd. All rights reserved.</p>
+        <p class="footer__affiliate">DecisionDNA is an affiliate of Chasing The Sun Pte Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

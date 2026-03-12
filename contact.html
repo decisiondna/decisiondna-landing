@@ -3,133 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> - Product inquiries, research collaboration, and media contact.">
-  <title>Contact - <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span></title>
-  
+  <meta name="description" content="Contact DecisionDNA. Alpha signup, enterprise diagnostics, and general inquiries.">
+  <meta property="og:title" content="Contact — DecisionDNA">
+  <meta property="og:description" content="Contact DecisionDNA. Alpha signup, enterprise diagnostics, and general inquiries.">
+  <meta property="og:url" content="https://decisiondna.io/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecisionDNA">
+  <meta property="og:image" content="https://decisiondna.io/images/Header.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Contact — DecisionDNA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
-  
   <link rel="stylesheet" href="css/main.css">
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
 </head>
 <body>
-  
+
+  <!-- Navigation -->
   <nav class="nav">
-    <div class="nav-content">
-      
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.svg" alt="DecisionDNA Logo" class="nav-logo-icon">
-        <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span>
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.svg" alt="DecisionDNA" class="nav__logo-icon">
+        Decision<span>DNA</span>
       </a>
-      
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      
-                  <ul class="nav-links">
-        <li><a href="products/index.html">Products</a></li>
-        <li><a href="how-we-work.html">How We Work</a></li>
-        <li><a href="theory/index.html">Theory</a></li>
-        <li><a href="research/index.html">Research</a></li>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="archetypes/index.html">Archetypes</a></li>
+        <li><a href="evidence.html">Evidence</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="hero" style="min-height: 25vh; padding-bottom: 0;">
-    <div class="hero-bg">
-      <div class="metabolic-grid"></div>
-    </div>
-    
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-label">Get in Touch</div>
-        <h1>Contact <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span></h1>
-        <p class="hero-subtitle">
-          Product inquiries, research collaboration, or media contact.
-        </p>
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Contact</h1>
+    <p class="page-header__subtitle">Alpha testers, enterprise inquiries, and general contact.</p>
+  </div>
+
+  <!-- Contact Form -->
+  <section class="section">
+    <div class="container" style="max-width: var(--max-narrow);">
+      <div class="section__header">
+        <p class="section__label">Get in Touch</p>
+        <h2>How Can We Help?</h2>
+      </div>
+      <p style="color: var(--mid); max-width: 540px; margin: 0 auto var(--space-xl); text-align: center;">Alpha access, enterprise diagnostics, research collaboration, or general questions &mdash; let us know what you need.</p>
+      <div style="max-width: 640px; margin: 0 auto;">
+        <script src="https://js-na2.hsforms.net/forms/embed/244418801.js" defer></script>
+        <div class="hs-form-frame" data-region="na2" data-form-id="dacb332f-fd13-4400-a63f-aa2d346d609d" data-portal-id="244418801"></div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 1rem 0 6rem 0;">
-    <div class="container-narrow">
-      
-      <!-- 
-        TO USE HUBSPOT FORM:
-        1. Create a contact form in HubSpot
-        2. Replace the form below with:
-        
-        <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-            region: "na2",
-            portalId: "244418801",
-            formId: "YOUR_CONTACT_FORM_ID_HERE"
-          });
-        </script>
-      -->
-      
-      <form class="contact-form" onsubmit="return handleFormSubmit(event);" action="thank-you.html" method="get">
-        
-        <div class="form-group">
-          <label class="form-label" for="name">Name *</label>
-          <input type="text" id="name" name="name" class="form-input" required>
+  <!-- 3. Direct + Stay Updated — bottom row -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="contact-bottom-row">
+        <div class="contact-block">
+          <h3>Direct</h3>
+          <div class="contact-info">
+            <a href="mailto:boy@decisiondna.io">boy@decisiondna.io</a>
+            <a href="tel:+6583086680">+65 8308 6680</a>
+            <a href="https://www.linkedin.com/in/boykester/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="email">Email *</label>
-          <input type="email" id="email" name="email" class="form-input" required>
+        <div class="contact-block">
+          <h3>Stay Updated</h3>
+          <p>Get notified as new capabilities launch.</p>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="email-capture" style="margin-top: var(--space-md);">
+            <input type="email" name="email" placeholder="you@company.com" class="form-input" required>
+            <button type="submit" class="btn btn--primary-dark btn--small">Subscribe</button>
+          </form>
         </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="organization">Organization</label>
-          <input type="text" id="organization" name="organization" class="form-input">
-        </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="category">Inquiry Type *</label>
-          <select id="category" name="category" class="form-select" required>
-            <option value="">Select a category</option>
-            <option value="product">Product Inquiry</option>
-            <option value="dd">Metabolic Due Diligence</option>
-            <option value="abri">Bubble Index: AI Interest</option>
-            <option value="research">Research Collaboration</option>
-            <option value="media">Media & Press</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="message">Message *</label>
-          <textarea id="message" name="message" class="form-textarea" required></textarea>
-        </div>
-        
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-        
-      </form>
+      </div>
     </div>
   </section>
 
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
-        <p>&copy; 2025 DecisionDNA. All rights reserved.</p>
-        <div style="display: flex; gap: 2rem;">
-          <a href="contact.html" style="color: var(--color-light-gray);">Contact</a>
-          <a href="privacy.html" style="color: var(--color-light-gray);">Privacy</a>
-          <a href="terms.html" style="color: var(--color-light-gray);">Terms</a>
-          <a href="how-we-work.html" style="color: var(--color-light-gray);">How We Work</a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <img src="images/logo.svg" alt="DecisionDNA">
+            <span>Decision<span style="font-weight: 300;">DNA</span></span>
+          </div>
         </div>
+        <div class="footer__links">
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="https://decisiondna.substack.com" target="_blank" rel="noopener">Substack</a>
+          <a href="https://www.linkedin.com/in/boykester/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 DecisionDNA Pte Ltd. All rights reserved.</p>
+        <p class="footer__affiliate">DecisionDNA is an affiliate of Chasing The Sun Pte Ltd.</p>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  
 </body>
 </html>

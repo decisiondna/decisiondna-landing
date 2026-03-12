@@ -3,83 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms of Service - <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span></title>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Favicon -->
+  <meta name="description" content="DecisionDNA Terms of Service. Agreement governing use of our website, plugin, API, and related services.">
+  <meta property="og:title" content="Terms of Service — DecisionDNA">
+  <meta property="og:description" content="DecisionDNA Terms of Service. Agreement governing use of our website, plugin, API, and related services.">
+  <meta property="og:url" content="https://decisiondna.io/terms.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecisionDNA">
+  <meta property="og:image" content="https://decisiondna.io/images/Header.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Terms of Service — DecisionDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="css/main.css">
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav class="nav">
-    <div class="nav-content">
-      
-      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="DecisionDNA Logo" class="nav-logo-icon"><span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span></a>
-      <button class="nav-toggle">☰</button>
-                  <ul class="nav-links">
-        <li><a href="products/index.html">Products</a></li>
-        <li><a href="how-we-work.html">How We Work</a></li>
-        <li><a href="theory/index.html">Theory</a></li>
-        <li><a href="research/index.html">Research</a></li>
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.svg" alt="DecisionDNA" class="nav__logo-icon">
+        Decision<span>DNA</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="archetypes/index.html">Archetypes</a></li>
+        <li><a href="evidence.html">Evidence</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        
       </ul>
     </div>
   </nav>
 
-  <section class="hero" style="min-height: 30vh;">
-    <div class="hero-bg"><div class="metabolic-grid"></div></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 style="font-size: 2.5rem;">Terms of Service</h1>
-        <p class="hero-subtitle">Last updated: November 25, 2025</p>
-      </div>
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Terms of Service</h1>
+    <p class="page-header__subtitle">Last updated: March 2026</p>
+  </header>
+
+  <!-- Content -->
+  <section class="section">
+    <div class="container--narrow">
+
+      <h2>1. Agreement to Terms</h2>
+      <p>By accessing DecisionDNA&rsquo;s website, plugin, API, or any related services (&ldquo;Services&rdquo;), you agree to be bound by these Terms of Service. If you do not agree, do not use the Services.</p>
+
+      <h2>2. Services</h2>
+      <p>DecisionDNA Pte Ltd (&ldquo;DecisionDNA,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;) provides organizational diagnostic instruments, including a Claude Cowork plugin, scoring API, and related analytical products. The Services analyse organizational documents and return diagnostic assessments benchmarked against a proprietary research database.</p>
+
+      <h2>3. Alpha / Beta Services</h2>
+      <p>Certain Services may be designated as alpha or beta releases. These are provided for testing and feedback purposes. Alpha and beta Services are provided &ldquo;as is&rdquo; without warranty of any kind. Features, scoring logic, and outputs may change without notice. Participation in alpha or beta programs is voluntary and free of charge unless otherwise agreed in writing.</p>
+
+      <h2>4. User Responsibilities</h2>
+      <p>You are responsible for ensuring you have the right to upload and analyse any documents submitted to the Services. You warrant that documents submitted do not violate any third-party rights, confidentiality obligations, or applicable laws.</p>
+      <p>You are responsible for any decisions made based on diagnostic outputs. DecisionDNA provides diagnostics, not investment advice, legal advice, or professional recommendations.</p>
+
+      <h2>5. How the Services Process Data</h2>
+      <p>The Claude Cowork plugin parses documents and extracts decision episodes locally on your device. No document content is transmitted to DecisionDNA servers.</p>
+      <p>An anonymized statistical payload &mdash; containing decision type counts, signal scores, and dimensional indicators but no company names, document text, or filenames &mdash; is transmitted to our scoring API for processing. Scored diagnostics are returned to your device.</p>
+      <p>Full details of our data processing architecture are described on our <a href="how-it-works.html">How It Works</a> page and in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+      <h2>6. Intellectual Property</h2>
+      <p>All methodology, scoring logic, archetype classifications, calibration models, and the research database underlying the Services are the intellectual property of DecisionDNA Pte Ltd.</p>
+      <p>The diagnostic outputs you receive are licensed for your internal business use only. You may not redistribute, resell, sublicense, or publicly disclose diagnostic outputs without written permission.</p>
+      <p>You may not reverse-engineer, decompile, or attempt to extract the scoring logic, model weights, or database contents from the Services.</p>
+
+      <h2>7. Your Data</h2>
+      <p>You retain full ownership of all documents you upload and all data you provide. DecisionDNA does not claim any rights over your documents or data.</p>
+      <p>Anonymized analytical payloads transmitted for scoring are retained for a maximum of 90 days and then automatically purged. You may request immediate deletion at any time by providing your diagnostic UUID.</p>
+      <p>See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>The Services are provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, whether express or implied. DecisionDNA does not warrant that diagnostic outputs will be accurate, complete, or suitable for any particular purpose.</p>
+      <p>DecisionDNA is not liable for any direct, indirect, incidental, consequential, or special damages arising from your use of the Services, including but not limited to business decisions, investment decisions, or organisational changes made based on diagnostic outputs.</p>
+      <p>Our total liability to you for any claim arising from the Services shall not exceed the amount you paid for the Services in the 12 months preceding the claim, or SGD&nbsp;100, whichever is greater.</p>
+
+      <h2>9. Confidentiality</h2>
+      <p>We treat all client information and diagnostic results as confidential. We will not disclose client identities, uploaded documents, or specific diagnostic findings to any third party without your written permission, except where required by law.</p>
+      <p>Aggregated, anonymized data that cannot be attributed to any specific client or organisation may be used to improve the Services and the research database.</p>
+
+      <h2>10. Modifications</h2>
+      <p>DecisionDNA reserves the right to modify these Terms at any time. Material changes will be communicated via the website or email. Continued use of the Services after changes are posted constitutes acceptance of the modified Terms.</p>
+
+      <h2>11. Termination</h2>
+      <p>You may stop using the Services at any time. DecisionDNA may suspend or terminate your access to the Services at any time, with or without cause, upon notice.</p>
+      <p>Upon termination, your right to use the Services ceases immediately. Provisions relating to intellectual property, limitation of liability, and governing law survive termination.</p>
+
+      <h2>12. Governing Law</h2>
+      <p>These Terms are governed by the laws of Singapore. Any disputes arising from these Terms or the Services shall be subject to the exclusive jurisdiction of the courts of Singapore.</p>
+
+      <h2>13. Contact</h2>
+      <p>Questions about these Terms? Email <a href="mailto:boy@decisiondna.io">boy@decisiondna.io</a> or visit our <a href="contact.html">Contact page</a>.</p>
+      <p style="margin-top: var(--space-2xl); font-size: 0.8125rem; color: var(--mid-light);">DecisionDNA Pte Ltd &nbsp;|&nbsp; Singapore &nbsp;|&nbsp; An affiliate of Chasing The Sun Pte Ltd.</p>
+
     </div>
   </section>
 
-  <section style="padding: 4rem 0;">
-    <div class="container-narrow">
-      <h2>Agreement to Terms</h2>
-      <p>By accessing <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span>'s website and services, you agree to be bound by these Terms of Service.</p>
-      
-      <h2 style="margin-top: 3rem;">Services</h2>
-      <p><span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> provides metabolic analyses and data products and are governed by the courts of Singapore.</p>
-      
-      <h2 style="margin-top: 3rem;">Intellectual Property</h2>
-      <p>All methodology, reports, and analysis provided by <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> remain the intellectual property of <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span>. Clients receive a license to use deliverables for internal business purposes only.</p>
-      
-      <h2 style="margin-top: 3rem;">Limitation of Liability</h2>
-      <p><span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> provides diagnostics and analysis, not investment advice. All information is provided "as is" without warranty. <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> is not liable for business decisions made based on our diagnostics.</p>
-      
-      <h2 style="margin-top: 3rem;">Confidentiality</h2>
-      <p>All client information and diagnostic results are confidential. <span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> will not disclose client identities or specific diagnostic findings without written permission.</p>
-      
-      <h2 style="margin-top: 3rem;">Modifications</h2>
-      <p><span class="nav-logo-text"><span class="nav-logo-decision">Decision</span><span class="nav-logo-dna">DNA</span></span> reserves the right to modify these terms at any time. Continued use of services constitutes acceptance of modified terms.</p>
-      
-      <h2 style="margin-top: 3rem;">Governing Law</h2>
-      <p>These terms are governed by the laws of Singapore.</p>
-      
-      <h2 style="margin-top: 3rem;">Contact</h2>
-      <p>Questions about these terms? <a href="contact.html" style="color: var(--color-accent);">Contact us</a></p>
-    </div>
-  </section>
-
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
-        <p>&copy; 2025 DecisionDNA. All rights reserved.</p>
-        <div style="display: flex; gap: 2rem;">
-          <a href="contact.html" style="color: var(--color-light-gray);">Contact</a>
-          <a href="privacy.html" style="color: var(--color-light-gray);">Privacy</a>
-          <a href="terms.html" style="color: var(--color-light-gray);">Terms</a>
-          <a href="how-we-work.html" style="color: var(--color-light-gray);">How We Work</a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <img src="images/logo.svg" alt="DecisionDNA">
+            <span>Decision<span style="font-weight: 300;">DNA</span></span>
+          </div>
         </div>
+        <div class="footer__links">
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="https://decisiondna.substack.com" target="_blank" rel="noopener">Substack</a>
+          <a href="https://www.linkedin.com/in/boykester/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 DecisionDNA Pte Ltd. All rights reserved.</p>
+        <p class="footer__affiliate">DecisionDNA is an affiliate of Chasing The Sun Pte Ltd.</p>
       </div>
     </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
